@@ -1,14 +1,14 @@
 PATH
   remote: .
   specs:
-    user_agent_parser (2.6.0)
+    user_agent_parser_livelink (2.6.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    coveralls_reborn (0.15.0)
+    coveralls_reborn (0.14.0)
       json (~> 2.1)
-      simplecov (~> 0.18.1)
+      simplecov (~> 0.17.1)
       term-ansicolor (~> 1.6)
       thor (>= 0.20.3, < 2.0)
       tins (~> 1.16)
@@ -17,10 +17,11 @@ GEM
     json (2.3.0-java)
     minitest (5.14.0)
     rake (13.0.1)
-    simplecov (0.18.5)
+    simplecov (0.17.1)
       docile (~> 1.1)
-      simplecov-html (~> 0.11)
-    simplecov-html (0.12.2)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
     sync (0.5.0)
     term-ansicolor (1.7.1)
       tins (~> 1.0)
@@ -36,7 +37,8 @@ DEPENDENCIES
   coveralls_reborn
   minitest
   rake
-  user_agent_parser!
+  simplecov-html (= 0.10.2)
+  user_agent_parser_livelink!
 
 BUNDLED WITH
    2.1.4

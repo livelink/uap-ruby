@@ -8,4 +8,5 @@ group :development, :test do
   gem 'coveralls_reborn'
   gem 'minitest'
   gem 'rake'
+  gem 'simplecov-html', '=0.10.2'
 end
